@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaCadastro">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Login 3000"
+            android:textColor="@color/black"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/txtCadNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitulo"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="100dp"
+            android:text="Nome:"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etCadNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCadNome"
+            android:layout_marginHorizontal="30dp"
+            android:hint="João Pedro Marques" />
+
+        <TextView
+            android:id="@+id/txtCadLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etCadNome"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:text="E-mail:"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etCadLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCadLogin"
+            android:layout_marginHorizontal="30dp"
+            android:hint="email@gmail.com" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Senha:"
+            android:textSize="30sp"
+            android:id="@+id/txtCadSenha"
+            android:layout_below="@id/etCadLogin"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etCadSenha"
+            android:inputType="textPassword"
+            android:layout_below="@id/txtCadSenha"
+            android:layout_marginHorizontal="30dp"
+            android:hint="senha123" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar senha:"
+            android:textSize="30sp"
+            android:id="@+id/txtCadConSenha"
+            android:layout_below="@id/etCadSenha"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etCadConSenha"
+            android:layout_below="@id/txtCadConSenha"
+            android:layout_marginHorizontal="30dp"
+            android:inputType="textPassword"
+            android:hint="senha123" />
+
+        <Button
+            android:id="@+id/btCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etCadConSenha"
+            android:layout_margin="30dp"
+            android:text="Cadastrar" />
+
+        <Button
+            android:id="@+id/btCadLogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btCadastrar"
+            android:layout_marginHorizontal="30dp"
+            android:text="Fazer login" />
+
+    </RelativeLayout>
+
+
+</ScrollView>
